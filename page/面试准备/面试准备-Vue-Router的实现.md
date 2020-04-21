@@ -72,7 +72,7 @@ window.history.replaceState(null, null, path);
 
 history 路由模式的实现主要基于存在下面几个特性：
 
-- pushState 和 repalceState 两个 API 来操作实现 URL 的变化 ；
+- pushState 和 replaceState 两个 API 来操作实现 URL 的变化 ；
 
 - 我们可以使用 popstate  事件来监听 url 的变化，从而对页面进行跳转（渲染）；
 

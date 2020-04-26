@@ -62,12 +62,11 @@ hash  路由模式的实现主要是基于下面几个特性：
 
 **（2）history 模式的实现原理**
 
-HTML5 提供了 History API 来实现 URL 的变化。其中做最主要的 API 有以下两个：history.pushState() 和 history.repalceState()。这两个 API 可以在不进行刷新的情况下，操作浏览器的历史纪录。唯一不同的是，前者是新增一个历史记录，后者是直接替换当前的历史记录，如下所示：
+HTML5 提供了 History API 来实现 URL 的变化。其中做最主要的 API 有以下两个：history.pushState() 和 history.replaceState()。这两个 API 可以在不进行刷新的情况下，操作浏览器的历史纪录。唯一不同的是，前者是新增一个历史记录，后者是直接替换当前的历史记录，如下所示：
 
 ```
 window.history.pushState(null, null, path);
 window.history.replaceState(null, null, path);
-复制代码
 ```
 
 history 路由模式的实现主要基于存在下面几个特性：
